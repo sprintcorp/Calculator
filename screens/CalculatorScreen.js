@@ -50,22 +50,22 @@ export default class CalculatorScreen extends React.Component {
         </View>
 
         <View style={styles.buttonRow}>
-        <CalcButton title="4" color="white" backgroundColor="#FF5722"/>
-        <CalcButton title="5" color="white" backgroundColor="#FF5722"/>
-        <CalcButton title="6" color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("4") }} title="4" color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("5") }} title="5" color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("6") }} title="6" color="white" backgroundColor="#FF5722"/>
         <CalcButton title="-" color="white" backgroundColor="#795548"/>
         </View>
 
         <View style={styles.buttonRow}>
-        <CalcButton title="1" color="white" backgroundColor="#FF5722"/>
-        <CalcButton title="2" color="white" backgroundColor="#FF5722"/>
-        <CalcButton title="3" color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("1") }} title="1" color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("2") }} title="2" color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("3") }} title="3" color="white" backgroundColor="#FF5722"/>
         <CalcButton title="+" color="white" backgroundColor="#795548"/>
         </View>
 
         <View style={styles.buttonRow}>
-        <CalcButton title="0" color="white" backgroundColor="#FF5722" style={{flex:2}}/>
-        <CalcButton title="." color="white" backgroundColor="#FF5722"/>
+        <CalcButton onPress={() => { this.onDigitPress("0") }} title="0" color="white" backgroundColor="#FF5722" style={{flex:2}}/>
+        <CalcButton onPress={() => { this.onDigitPress(".") }} title="." color="white" backgroundColor="#FF5722"/>
         <CalcButton title="=" color="white" backgroundColor="#795548"/>
        </View>
         </View>
